@@ -11,9 +11,12 @@ Hello
 > This one is a Blockquote
 >
 >  with two lines
+> I think that my block quote should be longer
 * an 
 * unordered
 * list
+* I am unsatisfied with
+* the previous length of this list
 
 1. followed
 2. by an
