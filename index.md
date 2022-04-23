@@ -1,4 +1,4 @@
-# Arthur Utecht
+# Lab Report Links at Bottom
 Hello
 *This is in italics*
 **But this is bold**
@@ -29,4 +29,6 @@ Hello
 a block
 of code
 ```
+## Lab Report Links
 [Lab Report 1](https://autecht.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+[Lab Report 2](https://autecht.github.io/cse15l-lab-reports/lab-report-2-week-4.html)
