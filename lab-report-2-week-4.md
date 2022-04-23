@@ -18,6 +18,6 @@ The bug was that the program used the presence of an open bracket, closing brack
 ![Image](ThirdFix.png)
 We made these changes in response to [this failure inducing input](https://github.com/autecht/markdown-parser/blob/main/test-file5.md). The input led to this output:
 
-[Image](ThirdSymptom.png)
+![Image](ThirdSymptom.png)
 
 The bug was that the program did not check the space between the closing parenthesis and open bracket. The failure-inducing input had the correct link format except that there were characters in between these two symbols. Because of the bug combined with the nearly-correct format, the symptom of ```page.com``` being added to the list of links and then printed arose.
