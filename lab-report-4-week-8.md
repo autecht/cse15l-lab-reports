@@ -7,7 +7,7 @@ In this report, we are adding tests to markdown-parse implementations and discus
 
 And [here](https://github.com/ddn005UCSD/markdown-parser) is the second one, which is the one our group reviewed in the week 7 lab.
 
-## Tests
+## Making and Running the Tests
 ### Snippet 1
 The first test looked like this:
 ```
@@ -20,18 +20,18 @@ The first test looked like this:
 [`code]`](ucsd.edu)
 ```
 
-`[a link`](url.com)
 
-[another link](`google.com)`
+Using Visual Stuio Code preview, the expected output is ```[`google.com, google.com, ucsd.edu]```. Here is how I created the test to verify the output: 
 
-[`cod[e`](google.com)
+![](Test1.png)
 
-[`code]`](ucsd.edu)
+My implementation failed this test:
 
-Expected output
-How I turned it into a test
-test output for mine
-test output for theirs
+![](Test1Failure.png)
+
+This implementation my group reviewed also failed this test: 
+
+![](ThierTest1Failure.png)
 
 ### Snippet 2
 The second test looked like this:
@@ -43,12 +43,25 @@ The second test looked like this:
 [some escaped \[ brackets \]](example.com)
 ```
 [a [nested link](a.com)](b.com)
+
 [a nested parenthesized url](a.com(()))
 
-Expected output
-How I turned it into a test
-test output for mine
-test output for theirs
+[some escaped \[ brackets \]](example.com)
+
+The expected output for this snippet is ```[a.com, a.com(()), example.com]```. Here is how I created the test to verify the output:
+
+![](Test2.png)
+
+My implementation failed this test:
+
+![](Test2Failure.png)
+
+This implementation my group reviewed also failed this test: 
+
+![](ThierTest2Failure.png)
+
+
+
 ### Snippet 3
 The third test looked like this:
 ```
@@ -77,9 +90,30 @@ And there's still some more text after that.
 
 And then there's more text
 ```
-Expected output
-How I turned it into a test
-test output for mine
-test output for theirs
+
+
+
+And then there's more text
+For this snippet, the expected output is ```[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]```. Here is how I created the test to verify the output:
+
+![](Test3.png)
+
+My implementation failed this test:
+
+![](Test3Failure.png)
+
+This implementation my group reviewed also failed this test: 
+
+![](ThierTest3Failure.png)
+
+
+## Thinking About Improvements
+### Snippet 1
+There is no small code change that would make my code work for Snippet 1 and all related cases using inline code with backticks. It would be too involved a change since you would need to keep track of backticks throughout the whole string input to determine areas that are inline code in order to exclude characters that are part of that code. 
+### Snippet 2
+There is no small code change that would make my code work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets. The change would need to be more involved because it goes beyond simply checking for individual characters. Instead, you would need to make sure the open and close brackets and parentheses were balanced while also accounting for new open brackets being a valid start to a new nested link.
+
+### Snippet 3
+
     
 
