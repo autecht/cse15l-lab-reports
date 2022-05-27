@@ -42,11 +42,6 @@ The second test looked like this:
 
 [some escaped \[ brackets \]](example.com)
 ```
-[a [nested link](a.com)](b.com)
-
-[a nested parenthesized url](a.com(()))
-
-[some escaped \[ brackets \]](example.com)
 
 The expected output for this snippet is ```[a.com, a.com(()), example.com]```. Here is how I created the test to verify the output:
 
@@ -93,7 +88,6 @@ And then there's more text
 
 
 
-And then there's more text
 For this snippet, the expected output is ```[https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedule]```. Here is how I created the test to verify the output:
 
 ![](Test3.png)
@@ -114,6 +108,7 @@ There is no small code change that would make my code work for Snippet 1 and all
 There is no small code change that would make my code work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets. The change would need to be more involved because it goes beyond simply checking for individual characters. Instead, you would need to make sure the open and close brackets and parentheses were balanced while also accounting for new open brackets being a valid start to a new nested link.
 
 ### Snippet 3
+There is a small code change that will make my program work for Snippet 3 and all related cases that have newlines in brackets and parenthesis. The change would involve checking the result of the `indexOf()` method with the arguments of `\n\n` and first `openBracket`. If the value were between `openParen` and `closeParen`, the `while loop` would increment `currentIndex` and `continue`.
 
     
 
