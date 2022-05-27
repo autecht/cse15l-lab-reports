@@ -1,5 +1,3 @@
-https://docs.google.com/document/d/1pRCPCxCt_zvS4dEZXCNvsFvaejKSj--nC9fMYW81by8/edit#
-
 # Adding and Reviewing Tests
 In this report, we are adding tests to markdown-parse implementations and discussing whether the implementations pass and how easily they could be improved.
 ## Links
