@@ -29,6 +29,12 @@ And the Lab 9 implementation had the following output:
 
 As such, my implementation is correct.
 
+Here is the beginning of the `getLinks()` method in the Lab 9 implementation:
+
+![](tmdp.png)
+
+The bug in the code of the Lab 9 implementation is that it never checks for the presence of backticks, so when backticks interfere with the format of the link, the method does not detect it. After the last if statement shown in the screenshot, there should be if statements to check that there are no sets of backticks that span across the characters that indicate a link.
+
 
 ## 503.md
 
@@ -44,9 +50,9 @@ And the Lab 9 implementation had the following output:
 
 As such, the Lab 9 implementation is correct.
 
+This is the part of the `getLinks()` method in my implementation that causes the bug: 
 
-Describe which implementation is correct, or neither if both give the wrong output
-Indicate both actual outputs (provide screenshots) and also what the expected output is (list the links that are expected in the output).
-Decide on what it should produce (i.e., expected output) by using either VScode preview or the CommonMark demo site. 
+![](mmdp.png)
 
-For the implementation that’s not correct (or choose one if both are incorrect), describe the bug (the problem in the code) in about 2-3 sentences. You don’t have to provide a fix, but you should be specific about what is wrong with the program, and show the code that should be fixed (Provide a screenshot of code and highlight where the change needs to be made).
+The bug is that the method assumes that valid links will have a `"."`, so it only adds the link to the list if it contains `"."`. The if statement shown in the image is causing this bug by because it only performs the necessary step of adding the link when the statement evaluates to `true`.
+
