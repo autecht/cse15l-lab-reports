@@ -1,4 +1,4 @@
-# Adding and Reviewing Tests
+# Using JUnit Tests
 In this report, we are adding tests to markdown-parse implementations and discussing whether the implementations pass and how easily they could be improved.
 ## Links
 [Here](https://github.com/autecht/markdown-parser) is the first markdown-parse repository, which is mine.

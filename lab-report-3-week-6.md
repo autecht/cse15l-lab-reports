@@ -1,4 +1,4 @@
-# Lab Report 3
+# Lab Report 3: Streamlining ssh, Pushing from a Server, and Copying Files Recursively
 ## Streamlining ```ssh``` Configuration
 SSH allows you to include a ```config``` file so that you do not need to type the full username associated with the host every time you log in remotely. Below is my config file:
 ![file](configChange.png)

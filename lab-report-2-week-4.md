@@ -1,4 +1,4 @@
-# Lab Report 2
+# Lab Report 2: Making Commits
 ## First Change
 ![Image](FirstFix.png)
 We made these changes in response to [this failure inducing input](https://github.com/autecht/markdown-parser/blob/main/my-test-file2.md). That input led to this symptom:

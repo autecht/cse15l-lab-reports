@@ -1,4 +1,4 @@
-# Finding and Analyzing Different Outputs
+# Finding and Analyzing Differing Outputs Using a SH File
 
 ## Finding Different Outputs
 

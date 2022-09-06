@@ -1,4 +1,4 @@
-# CSE 15L Remote Running
+# CSE 15L Remote Running With SSH
 
 ## Installing VS Code
 To install Visual Studio Code, go to the [Visual Studio Code homepage](https://code.visualstudio.com/). This will take you to the website below.
