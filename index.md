@@ -1,4 +1,4 @@
-# Arthur Utecht CSE 15L Home Page
+# Arthur Utecht CSE 15L Homepage
 ## Lab Report Links
 [Lab Report 1: Remote Running With SSH](https://autecht.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 
